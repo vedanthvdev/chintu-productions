@@ -30,7 +30,7 @@ export default function OpengraphImage() {
             color: "#d8b26a",
           }}
         >
-          @chintu_production
+          @chintuproductions
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>

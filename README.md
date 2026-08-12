@@ -109,7 +109,7 @@ Scroll reveals use `gsap.from()` so content is never hidden by CSS — if JavaSc
 
 ## Contact
 
-Enquiries currently route to Instagram: [@chintu_production](https://www.instagram.com/chintu_production/). When a booking email exists, add it in `src/content/site.ts`.
+Enquiries currently route to Instagram: [@chintuproductions](https://www.instagram.com/chintuproductions/). When a booking email exists, add it in `src/content/site.ts`.
 
 ## Scripts
 

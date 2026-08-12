@@ -1,7 +1,7 @@
 import type { SiteContent } from "@/types/content";
 import { YOUTUBE_CHANNEL_URL } from "./films";
 
-export const INSTAGRAM_URL = "https://www.instagram.com/chintu_production/";
+export const INSTAGRAM_URL = "https://www.instagram.com/chintuproductions/";
 export const CONTACT_EMAIL = "vedanthlimited@gmail.com";
 
 export const site: SiteContent = {
@@ -23,7 +23,7 @@ export const site: SiteContent = {
   social: [
     {
       label: "Instagram",
-      handle: "@chintu_production",
+      handle: "@chintuproductions",
       href: INSTAGRAM_URL,
     },
     {
