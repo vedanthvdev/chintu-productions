@@ -46,6 +46,8 @@ The film appears automatically under its category heading. Set `featured: true` 
 
 Videos are embedded with a click-to-play facade: only the YouTube thumbnail loads on page load, and the player is injected on click. This keeps the page fast even with a large portfolio.
 
+Films marked `is360: true` also get a "Watch in 360° on YouTube" link. In-page embeds play those videos flat; look-around (drag or gyroscope) only works in YouTube’s own player.
+
 ### Hero showreel
 
 The hero plays a muted, looping background video defined by `hero.reel` in `src/content/site.ts`. Set it to `null` to fall back to a still frame from the featured film.

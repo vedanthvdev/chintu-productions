@@ -17,7 +17,7 @@ export const faqs: FaqItem[] = [
     id: "360",
     question: "What is a 360 film and do we need special kit to watch it?",
     answer:
-      "A 360 film is captured so the viewer can look around the scene while it plays. It works in an ordinary browser or phone. Drag to look around. No headset or app is needed.",
+      "A 360 film is captured so the viewer can look around the scene while it plays. The page plays a preview; open the film on YouTube to drag or tilt the phone and look around. No headset is needed — the YouTube app on a phone is the most reliable way to watch.",
   },
   {
     id: "drone",

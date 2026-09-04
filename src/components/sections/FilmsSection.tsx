@@ -1,6 +1,7 @@
 import { featuredFilm, filmCategories, INSTAGRAM_URL, otherFilms } from "@/content";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { VideoEmbed } from "@/components/ui/VideoEmbed";
+import { WatchIn360Link } from "@/components/ui/WatchIn360Link";
 
 export function FilmsSection() {
   return (
@@ -9,7 +10,7 @@ export function FilmsSection() {
         <SectionHeading
           eyebrow="Selected films"
           title="Watch the work"
-          description="Every film below plays right here on the page. In the 360° films you can drag inside the video while it runs and look anywhere in the room. No headset, no app."
+          description="Every film below plays right here on the page. 360° films play flat in that player — open them on YouTube to drag or tilt and look around the room."
         />
 
         <div className="reveal mt-10 grid gap-6 sm:gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-10">
@@ -23,7 +24,7 @@ export function FilmsSection() {
               <span className="label text-gold">Featured film</span>
               {featuredFilm.is360 ? (
                 <span className="border border-gold/40 px-2.5 py-1 text-[0.625rem] font-medium tracking-[0.18em] text-gold-strong uppercase">
-                  Drag to look around
+                  360° on YouTube
                 </span>
               ) : null}
             </div>
@@ -31,6 +32,14 @@ export function FilmsSection() {
               {featuredFilm.title}
             </h3>
             <p className="mt-4 text-body">{featuredFilm.description}</p>
+            {featuredFilm.is360 ? (
+              <WatchIn360Link
+                youtubeId={featuredFilm.youtubeId}
+                title={featuredFilm.title}
+                variant="button"
+                className="mt-6"
+              />
+            ) : null}
           </div>
         </div>
 
@@ -58,6 +67,14 @@ export function FilmsSection() {
                       ) : null}
                     </div>
                     <p className="mt-2 text-sm text-body">{film.description}</p>
+                    {film.is360 ? (
+                      <p className="mt-3 text-sm">
+                        <WatchIn360Link
+                          youtubeId={film.youtubeId}
+                          title={film.title}
+                        />
+                      </p>
+                    ) : null}
                   </article>
                 ))}
               </div>
