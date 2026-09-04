@@ -5,6 +5,7 @@ type ButtonLinkProps = {
   children: React.ReactNode;
   variant?: "primary" | "ghost";
   className?: string;
+  "aria-label"?: string;
 };
 
 export function ButtonLink({
@@ -12,12 +13,14 @@ export function ButtonLink({
   children,
   variant = "primary",
   className,
+  "aria-label": ariaLabel,
 }: ButtonLinkProps) {
   const isExternal = href.startsWith("http");
 
   return (
     <a
       href={href}
+      aria-label={ariaLabel}
       className={cn(
         "inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium tracking-[0.06em] transition-colors duration-300",
         variant === "primary" &&

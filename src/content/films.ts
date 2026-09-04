@@ -14,7 +14,7 @@ export const films: Film[] = [
     title: "Hassan: engagement and dance in 360°",
     category: "360° wedding films",
     description:
-      "A full celebration filmed in 360°. Press play, then drag inside the video to stand in the middle of the room and look wherever you want. The dance floor, the family, the ceremony.",
+      "A full celebration filmed in 360°. Play it here, then open it on YouTube to stand in the middle of the room and look wherever you want — the dance floor, the family, the ceremony.",
     is360: true,
     featured: true,
   },
@@ -41,7 +41,7 @@ export const films: Film[] = [
     title: "Chaturya's Mangalyam in 360°",
     category: "360° wedding films",
     description:
-      "A traditional South Indian wedding in full 360°. Look around the mandap as the ceremony happens.",
+      "A traditional South Indian wedding in full 360°. Open it on YouTube to look around the mandap as the ceremony happens.",
     is360: true,
   },
   {

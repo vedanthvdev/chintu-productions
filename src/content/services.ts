@@ -19,7 +19,7 @@ export const services: Service[] = [
     number: "02",
     title: "Property 360 tours",
     description:
-      "Immersive walkthroughs for homes, venues and developments. Viewers look around the room from any device, no headset or app required.",
+      "Immersive walkthroughs for homes, venues and developments. Viewers open the film on YouTube to look around the room from a phone or laptop — no headset required.",
     includes: [
       "360 capture",
       "Guided walkthrough edit",
